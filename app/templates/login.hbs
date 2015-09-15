@@ -1,0 +1,20 @@
+<h1>Login</h1>
+
+<form {{action 'authenticate' on='submit'}}>
+	
+	<label for="identification">Email</label>
+	{{input id='identification' placeholder='enter email' value=identification}}
+	
+	<br>
+	<br>
+	
+	<label for="password">Password</label>
+	{{input id='password' placeholder='Enter password' type='password' value=password}}
+	<button type="submit">Login</button>
+
+	<br>
+	<br>
+
+	{{#link-to 'forgot'}}Forgot Your Password?{{/link-to}}
+
+</form>

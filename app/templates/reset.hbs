@@ -1,0 +1,14 @@
+<h1>Reset Password</h1>
+<br>
+<form {{ action "resetPassword" newPassword confirmPassword on="submit"}}>
+	<label for="new password">New Password</label>
+		{{input value=newPassword type='password' placeholder='New Password'}}
+
+		<br>
+		<br>
+		
+	<label for='confirm password'>Confirm Password</label>
+		{{input value=confirmPassword type='password' placeholder='Re-enter New Password'}}
+
+	<button onclick='submit'>Save</button>
+</form>

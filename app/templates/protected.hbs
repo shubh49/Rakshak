@@ -1,0 +1,16 @@
+<h1>Protected</h1>
+
+<form {{ action "sendOTP" number on="submit"}}>
+<label for='mobile number'>Mobile No</label>
+	{{input id='mobile' placeholder='mobile number' value=number}}
+	<button onclick="submit">Send OTP</button>
+</form>
+
+<br>
+<br>
+
+<form {{ action "verify" code number on="submit"}}>
+<label for='otp code'>OTP Code</label>
+	{{input id='otp code' placeholder='OTP Code' value=code}}
+	<button onclick="submit">Verify</button>
+</form>

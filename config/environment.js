@@ -17,9 +17,29 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
-  };
+  }
+
+  ENV['simple-auth'] = {
+    authorizer: 'simple-auth-authorizer:token',
+    authenticationRoute: "login",
+    crossOriginWhitelist: ['http://localhost:3000']
+  }
+
+  ENV['simple-auth-token'] = {
+    serverTokenEndpoint: 'http://localhost:3000/api/login',
+    identificationField: 'identification',
+    tokenPropertyName: 'token',
+    authorizationPrefix: 'Bearer ',
+    authorizationHeaderName: 'Authorization'
+  }
+
+  
+    // ENV['simple-auth-oauth2'] = {
+    //   serverTokenEndpoint: 'http://localhost:300/api/login'
+    // }
 
   if (environment === 'development') {
+
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
