@@ -1,6 +1,6 @@
 # Try-auth
 
-The aim of the project was to understand the concepts of authentication and authorization and its implementation in Ember.js framework. The node modules simple-auth , simple-auth-token are used.
+The aim of the project was to understand the concepts of authentication and authorization and its implementation in Ember.js framework. The node modules 'simple-auth' , 'simple-auth-token' are used.
 
 ## Prerequisites
 
